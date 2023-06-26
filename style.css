@@ -30,7 +30,6 @@ body {
 }
 
 body {
-  background: var(--pale-blue);
   display: flex;
   justify-content: center;
   font-family: "Hanken Grotesk", sans-serif;
@@ -61,6 +60,10 @@ body {
 .card-summary__title {
   font-size: 1.2rem;
   margin: 1.5rem 0;
+}
+
+.card-summary__title {
+  color: var(--dark-gray-blue);
 }
 
 .card-result__body {
@@ -196,11 +199,19 @@ body {
     border-radius: 2rem;
     box-shadow: 1px 1px 20px 1px var(--cobalt-blue-bg);
     display: flex;
-    max-width: 800px;
+    max-width: 700px;
   }
 
   .card-result {
     border-radius: 2rem;
-    max-width: 400px;
+    max-width: 350px;
+    padding: 0 2.5rem 2rem 2.5rem;
+    justify-content: space-between;
+  }
+
+  .card-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
